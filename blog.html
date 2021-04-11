@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design - Joey de Vries</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="img/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars"onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Certificate & Online Programs For 2021</h1>
+    </section>
+
+<!----------Blog ---------->
+<section class="blog-content">
+    <div class="row">
+        <div class="blog-left">
+            <img src="img/certificate.jpg">
+            <h2>Our Certificate & Online Programs For 2021</h2>
+            <p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas auguae, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</p>
+            <br>
+            <p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas auguae, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</p>
+            <br>
+            <p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas auguae, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</p>
+            <br>
+            <p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas auguae, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</p>
+            <div class="comment-box">
+                <h3>Leave a comment</h3>
+                <form class="comment-form">
+                    <input type="text" placeholder="Enter Name" required>
+                    <input type="email" placeholder="Enter Email" required>
+                    <textarea rows="5" placeholder="Leave your comment" required></textarea>
+                    <Button type="submit" class="hero-btn red-btn">POST COMMENT</Button>
+                </form>
+            </div>
+        </div>
+        <div class="blog-right">
+            <h3>Post Categories</h3>
+            <div>
+                <span>Business Analytics</span>
+                <span>23</span>
+            </div>
+            <div>
+                <span>Entrepreneurship</span>
+                <span>101</span>
+            </div>
+            <div>
+                <span>Math</span>
+                <span>12</span>
+            </div>
+            <div>
+                <span>Business</span>
+                <span>54</span>
+            </div>
+            <div>
+                <span>Travel</span>
+                <span>98</span>
+            </div>
+            <div>
+                <span>Other</span>
+                <span>45</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!----------Footer ---------->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas auguae, eu vulputate magna eros eu erat. Aliquam erat volutpat. <br>Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</p>
+    <div class="icons">
+        <a href="https://www.facebook.com/joeydevr1999" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/JoeyCBJ" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.instagram.com/joey.devr_" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/joeydevries68" target="_blank"><i class="fa fa-linkedin"></i></a>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by <a href="http://joeydevries.nl" target="_blank">Joey de Vries</a></p>
+</section>
+
+<!----------Javascript for Toggle menu ---------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu()
+        {
+            navLinks.style.right = "0";
+        }
+        function hideMenu()
+        {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
