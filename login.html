@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design - Joey de Vries</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header2">
+        <nav>
+            <a href="index.html"><img src="img/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars"onclick="showMenu()"></i>
+        </nav>
+    </section>
+
+<!----------LOGIN ---------->
+<div class="container">
+    <div class="card">
+        <div class="inner-box" id="card">
+            <div class="card-front">
+                <h2>LOGIN</h2>
+                <form>
+                    <input type="text" class="input-box" placeholder="Your Name" required>
+                    <input type="email" class="input-box" placeholder="Enter email" required>
+                    <input type="password" class="input-box" placeholder="Password" required>
+                    <button type="submit" class="submit-btn">Submit</button>
+                    <input type="checkbox"><span class="remember">Remember Me</span>
+                </form>
+                <button type="button" class="new-btn" onclick="openRegister()">I'm New Here</button>
+                <a href="">Forget password</a>
+            </div>
+            <div class="card-back">
+                <h2>REGISTER</h2>
+                <form>
+                    <input type="email" class="input-box" placeholder="Enter email" required>
+                    <input type="password" class="input-box" placeholder="Password" required>
+                    <button type="submit" class="submit-btn">Submit</button>
+                    <input type="checkbox"><span class="remember">Remember Me</span>
+                </form>
+                <button type="button" class="new-btn" onclick="openLogin()">I have an account</button>
+                <a href="">Forget password</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------Javascript for Toggle menu ---------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu()
+        {
+            navLinks.style.right = "0";
+        }
+        function hideMenu()
+        {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+<!----------Javascript for login and register ---------->
+<script>
+    var card = document.getElementById("card")
+    function openRegister(){
+        card.style.transform = "rotateY(-180deg)"
+    }
+    function openLogin(){
+        card.style.transform = "rotateY(0deg)"
+    }
+</script>
+
+</body>
+</html>
